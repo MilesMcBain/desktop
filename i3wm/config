@@ -188,6 +188,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym Mod4+Control+h move workspace to output left
 bindsym Mod4+Control+l move workspace to output right
 
+# launch rofi
+bindsym Control+space exec --no-startup-id "rofi -modi drun,run,window -show"
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
@@ -200,7 +202,6 @@ bindsym Mod4+Control+l move workspace to output right
 #######################################################################
 exec --no-startup-id gnome-settings-daemon
 exec --no-startup-id nm-applet
-exec --no-startup-id albert
 exec --no-startup-id "setxkbmap us"
 exec --no-startup-id ~/bin/office_desk.sh 
 exec --no-startup-id nitrogen --restore
